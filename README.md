@@ -6,4 +6,6 @@ conda install pytorch pytorch-cuda torchvision torchaudio -c pytorch
 
 # conda remove --name kg --all
 conda clean --all -y
+
+# conda install datasets huggingface_hub transformers tokenizers -c HuggingFace
 ```
