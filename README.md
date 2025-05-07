@@ -9,5 +9,5 @@ conda clean --all -y
 
 # conda install datasets -c HuggingFace
 # conda install huggingface_hub transformers tokenizers -c conda-forge
-# conda install azure-identity openai wandb rich accelerate -c conda-forge
+# conda install azure-identity openai wandb rich accelerate evaluate nltk -c conda-forge
 ```
