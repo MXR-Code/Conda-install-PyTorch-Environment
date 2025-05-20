@@ -10,6 +10,8 @@ conda install cudatoolkit cuda-cudart cuda-nvtx cuda cuda-compiler=12.4 -c nvidi
 conda install pytorch pytorch-cuda torchvision torchaudio -c pytorch
 conda install pytorch pytorch-cuda=12.4 torchvision torchaudio -c pytorch
 
+conda install sentence-transformers -c conda-forge
+
 conda install datasets -c HuggingFace
 conda install huggingface_hub transformers tokenizers datasets -c conda-forge
 conda install azure-identity openai wandb rich accelerate evaluate nltk -c conda-forge
