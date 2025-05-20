@@ -8,6 +8,6 @@ conda install pytorch pytorch-cuda torchvision torchaudio -c pytorch
 conda clean --all -y
 
 # conda install datasets -c HuggingFace
-# conda install huggingface_hub transformers tokenizers -c conda-forge
+# conda install huggingface_hub transformers tokenizers datasets -c conda-forge
 # conda install azure-identity openai wandb rich accelerate evaluate nltk -c conda-forge
 ```
