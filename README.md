@@ -14,7 +14,7 @@ conda install sentence-transformers -c conda-forge
 
 conda install datasets -c HuggingFace
 conda install huggingface_hub transformers tokenizers datasets -c conda-forge
-conda install azure-identity openai wandb rich accelerate evaluate nltk -c conda-forge
+conda install azure-identity openai wandb rich accelerate evaluate nltk rouge-score absl-py -c conda-forge
 
 conda remove --name kg --all
 conda clean --all -y
