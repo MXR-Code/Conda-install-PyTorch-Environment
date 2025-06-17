@@ -19,6 +19,21 @@ conda install azure-identity openai wandb rich accelerate evaluate nltk rouge-sc
 conda remove --name kg --all
 conda clean --all -y
 ```
+```bash
+conda create -n mxr_kgllm python=3.10 -y
+conda activate mxr_kgllm
+nvcc --version
+
+conda install cuda-toolkit=11.8 cuda-cupti=11.8 cuda-cudart=11.8 cuda-nvtx=11.8 cuda=11.8 cuda-compiler=11.8 cuda-runtime=11.8 cuda-nvprune=11.8 cuda-nvprune=11.8 cuda-libraries=11.8 -c nvidia
+conda install pytorch pytorch-cuda=11.8 torchvision torchaudio -c pytorch
+
+conda install huggingface_hub transformers tokenizers datasets sentence-transformers -c conda-forge
+conda install azure-identity openai wandb rich accelerate evaluate nltk rouge-score absl-py bert_score openpyxl -c conda-forge
+
+conda activate base
+conda remove --name mxr_kgllm --all -y
+conda clean --all -y
+```
 
 ```bash
 conda create -n uni python=3.10
