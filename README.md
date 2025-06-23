@@ -25,10 +25,15 @@ conda activate mxr_kgllm
 nvcc --version
 
 conda install cuda-toolkit=11.8 cuda-cupti=11.8 cuda-cudart=11.8 cuda-nvtx=11.8 cuda=11.8 cuda-compiler=11.8 cuda-runtime=11.8 cuda-nvprune=11.8 cuda-nvprune=11.8 cuda-libraries=11.8 -c nvidia
-conda install pytorch pytorch-cuda=11.8 torchvision torchaudio -c pytorch
+conda install pytorch pytorch-cuda=11.8 torchvision torchaudio torchdata -c pytorch
 
 conda install huggingface_hub transformers tokenizers datasets sentence-transformers -c conda-forge
 conda install azure-identity openai wandb rich accelerate evaluate nltk rouge-score absl-py bert_score openpyxl -c conda-forge
+
+conda install pyg=*=*cu* pytorch-scatter pytorch-sparse pytorch-cluster pytorch-spline-conv -c pyg
+
+torchdata opencv pillow numpy scipy openpyxl pandas matplotlib scikit-learn grpcio optuna absl-py alembic colorlog imbalanced-learn llvmlite littleutils mako markdown numba ogb outdated protobuf tensorboard tensorboard-data-server werkzeug pydantic igraph cmake -c pytorch -c pyg -c conda-forge  -c nvidia
+
 
 conda activate base
 conda remove --name mxr_kgllm --all -y
