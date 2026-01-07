@@ -10,7 +10,7 @@ nvidia-smi
 conda install pytorch pytorch-cuda=11.8 torchvision torchaudio torchdata -c pytorch -c nvidia
 
 # Huggingface Packages
-conda install huggingface_hub transformers tokenizers datasets sentence-transformers -c conda-forge
+conda install huggingface_hub=0.34 transformers=4.56 tokenizers=0.22.0 datasets=4.0 sentence-transformers=5.1.0 -c conda-forge
 
 # GPU Pytorch Geometric 
 conda install pyg=*=*cu* pytorch-scatter pytorch-sparse pytorch-cluster pytorch-spline-conv -c pyg
