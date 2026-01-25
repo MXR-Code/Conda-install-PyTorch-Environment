@@ -19,7 +19,7 @@ conda install pyg=*=*cu* pytorch-scatter pytorch-sparse pytorch-cluster pytorch-
 conda install pykeen -c mfratello -c conda-forge
 
 # Other
-conda install nvidia wandb rich accelerate evaluate nltk rouge-score absl-py bert_score openpyxl selenium fire peft ninja torchdata opencv pillow numpy scipy pandas matplotlib scikit-learn grpcio optuna alembic colorlog imbalanced-learn llvmlite littleutils mako markdown numba ogb outdated protobuf tensorboard tensorboard-data-server werkzeug pydantic igraph cmake -c pytorch -c pyg -c conda-forge -c 
+conda install nvidia wandb rich accelerate evaluate nltk rouge-score absl-py bert_score openpyxl selenium fire peft ninja torchdata opencv pillow numpy scipy pandas matplotlib scikit-learn grpcio optuna alembic colorlog imbalanced-learn llvmlite littleutils mako markdown numba ogb outdated protobuf tensorboard tensorboard-data-server werkzeug pydantic igraph cmake -c pytorch -c pyg -c conda-forge
 
 # for Linux
 conda triton -c conda-forge
