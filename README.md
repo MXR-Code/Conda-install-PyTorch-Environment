@@ -43,7 +43,13 @@ conda triton -c conda-forge
 
 conda activate base && conda remove --name mxr_kgllm --all -y && conda clean --all -y
 
-conda clean --all -y 
+conda clean --all -y
+
+
+conda create -n mxr_kgllm python=3.10 -y && conda init && source ~/.bashrc && conda activate mxr_kgllm && cd /root/autodl-tmp && nvidia-smi &&
+pip install --pre torch torchvision torchaudio \
+--index-url https://download.pytorch.org/whl/nightly/cu130 && \
+pip install transformers==4.56.2 datasets==4.0.0 tokenizers==0.22.0 sentence-transformers==5.1.0 accelerate==1.0.1 peft==0.13.2 huggingface-hub==0.34.1 evaluate==0.4.3 numpy scipy pandas matplotlib scikit-learn nltk==3.9.1 pillow opencv-python openpyxl selenium fire rich wandb==0.18.7 optuna==4.1.0 tensorboard==2.18.0 protobuf pydantic && pip install torch-geometric
 ```
 
 
